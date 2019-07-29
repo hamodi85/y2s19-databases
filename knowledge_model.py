@@ -14,4 +14,8 @@ class Knowledge(Base):
 	# topic of the article. The last column will be
 	# an integer, representing your rating of the article.
 
-	pass
+	__tablename__ + "Knowledge"
+	Knowledge_id = Column(Integer, primary_key=True)
+	name = Column(string)
+	topic = Column(string)
+	rating = Column(integer)
